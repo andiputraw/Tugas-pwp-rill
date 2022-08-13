@@ -25,6 +25,11 @@ a:hover{
     background-color: #ddd;
     color: black;
 }
+.card {
+    background-color: white;
+    padding: 0px;
+    margin-top:0px;
+  }
 
 .kanan {
   float : left;
@@ -38,13 +43,11 @@ a:hover{
   width: 175%;
   height: 175%;
 }
-.responsive{
-  width: 88%;
-  height: 88%;
-}
+
 .gallery {
   border: 1px solid #ccc;
   }
+  
   div.gallery:hover {
   border: 1px solid #777;
   }
@@ -77,8 +80,44 @@ a:hover{
 
 
 
-
-
+/*Buat galeri nya*/
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+        
+        }
+        div.gallery {
+            border: 1px solid #ccc;
+            }
+            div.gallery:hover {
+            border: 1px solid #777;
+            }
+            div.gallery img {
+            width: 80%;
+            height: auto;
+            
+            }
+            div.desc {
+            padding: 15px;
+            text-align: center;
+            }
+            @media only screen and (max-width: 700px) {
+                .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+                }
+                }
+                @media only screen and (max-width: 500px) {
+                .responsive {
+                width: 100%;
+                }
+                }
+                .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+                }
 
 
 
