@@ -6,7 +6,7 @@ body{
 }
 .header{
     text-align: center;
-    background: rgb(0, 0, 169);
+    background: #1C3879;
     padding: 10px;
 }
 .nav{
@@ -101,7 +101,7 @@ h4{
     padding: 3px;
     text-align: center; 
     width : 100%;
-    background: red;
+    background: #1C3879;
     margin: 1px;
     color:white;
 }
