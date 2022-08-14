@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin : 0;
+    padding: 0;
 }
 body{
     background: #eaeaea;
@@ -26,7 +28,6 @@ a:hover{
     color: black;
 }
 .leftcolumn{
-  background-color: white;
   float: left;
   margin-top: 1%;
   height: 73%;
@@ -43,12 +44,15 @@ a:hover{
   position: absolute;
   size: absolute;
   margin-left: 73%;
+  margin-top: 1%;;
+  background-color: white;
 
   }
 .foto{
   position: relative;
-  width: 175%;
-  height: 175%;
+  width: 170%;
+  height: 170%;
+  margin-left: 20px;
 }
   /* Clear floats after the columns */
   .row:after {
@@ -60,19 +64,21 @@ a:hover{
 
 .gallery {
   border: 1px solid #ccc;
+   background-color: white;
   }
   
   div.gallery:hover {
   border: 1px solid #777;
   }
   div.gallery img {
-  width: 80%;
+  width: auto;
   height: auto;
   
   }
   div.desc {
   padding: 15px;
   text-align: center;
+  font-size: 14px;
   }
   @media only screen and (max-width: 700px) {
       .responsive {
@@ -92,6 +98,9 @@ a:hover{
       }
 
 
+      .imgThumbnail{
+       margin-right:20px;
+      }
 
 
 /*Buat galeri nya*/
@@ -100,8 +109,9 @@ a:hover{
         padding: 0 6px;
         float: left;
         width: 24.99999%;
+      }
         
-        }
+        
         div.gallery {
             border: 1px solid #ccc;
             }
@@ -111,6 +121,7 @@ a:hover{
             div.gallery img {
             width: 80%;
             height: auto;
+            
             
             }
             div.desc {
@@ -138,8 +149,9 @@ a:hover{
                   border-radius: 5px;
                   cursor: pointer;
                   transition: 0.3s;
-                  height: 250px;
-                  width: 250px;
+                  height: 640px;
+                  width: 360px;
+                  
                }
                .ImgThumbnail:nth-of-type(1) {
                   margin-left: 20%;
@@ -160,9 +172,8 @@ a:hover{
              .modalImage {
                 margin: auto;
                 display: block;
-                width: 60%;
-                height: 60%;
-                max-width: 700px;
+                width: 30%;
+                height: 95%;
              }
              #caption {
               margin: auto;
@@ -194,4 +205,15 @@ a:hover{
       height: 100%;
    }
 }
- 
+.kopi{
+   position: block;
+   bottom : 0;
+   left : 0;
+   padding-top: 3px;
+   padding: 3px;
+   text-align: center; 
+   width : 100%;
+   background: #1C3879;
+   margin: 1px;
+   color:white;
+}
